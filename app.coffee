@@ -9,37 +9,38 @@ Framer.Info =
 	description: ""
 
 
-# Import file "Ethelo Topic Page Prototypes-Small Browser v1" (sizes and positions are scaled 1:3)
-sketch = Framer.Importer.load("imported/Ethelo Topic Page Prototypes-Small Browser v1@3x")
+# Import file "Ethelo Topic Page Prototypes-Small Browser v1 no artboard" (sizes and positions are scaled 1:3)
+sketch = Framer.Importer.load("imported/Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3x")
 
 Utils.globalLayers(sketch)
 
 sideNavDrawer.states.add
-	closed:
-		x: -1200
-		opacity: 0
-	
 	open:
 		x: 0
-		opacity: 1
-		visible: true 
+	closed:
+		x: -1200
+
 sideNavDrawer.states.animationOptions =
 	curve: "ease-in-out"
+	time: .4
 
-sideNavDrawer.states.switch("closed")
-
-button-sideNav = new Layer
+buttonNav = new Layer
 	y: 72
+	x: 0
 	width: 182
 	height: 168
 
-button-sideNav.states.add
-	stateA:
+buttonNav.states.add
+	closed:
+		x: 900
+	open:
 		x: 0
-	stateB:
-		x: 20
 
-sideNavButton.onTap ->
-	sideNavDrawer.states.switch("open")
+buttonNav.states.animationOptions =
+	time: 0
+
+buttonNav.onClick ->
+	sideNavDrawer.states.next()
+	buttonNav.states.next()
 
 
