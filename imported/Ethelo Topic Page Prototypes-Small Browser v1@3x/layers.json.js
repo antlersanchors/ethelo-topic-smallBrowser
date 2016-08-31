@@ -75,10 +75,10 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1@3x/layers.jso
 				"layerFrame": {
 					"x": 0,
 					"y": 24,
-					"width": 361,
-					"height": 817
+					"width": 360,
+					"height": 833
 				},
-				"visible": true,
+				"visible": false,
 				"metadata": {
 					"opacity": 1
 				},
@@ -87,8 +87,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1@3x/layers.jso
 					"frame": {
 						"x": 0,
 						"y": 24,
-						"width": 361,
-						"height": 817
+						"width": 360,
+						"height": 833
 					}
 				},
 				"children": [
@@ -161,16 +161,34 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1@3x/layers.jso
 				"metadata": {
 					"opacity": 1
 				},
-				"image": {
-					"path": "images/Layer-headerBar-qti0oddb.png",
-					"frame": {
-						"x": 0,
-						"y": 24,
-						"width": 360,
-						"height": 56
+				"children": [
+					{
+						"objectId": "A017CA46-6155-4C8C-8F98-ABD87DE3DB64",
+						"kind": "group",
+						"name": "headerGroup",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 0,
+							"y": 24,
+							"width": 360,
+							"height": 56
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-headerGroup-qtaxn0nb.png",
+							"frame": {
+								"x": 0,
+								"y": 24,
+								"width": 360,
+								"height": 56
+							}
+						},
+						"children": []
 					}
-				},
-				"children": []
+				]
 			},
 			{
 				"objectId": "6473B73C-1D57-409C-80D4-7E4FFE256776",
