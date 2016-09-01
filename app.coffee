@@ -100,11 +100,11 @@ navScroll.bringToFront()
 # FAB AND FAB MENU #
 FAB_Expanded_with_Scrim.states.add
 	closed:
+		visible: false
 		opacity: 0
-# 		visible: false
-		scale: 0
+		scale: .2
 	open:
-# 		visible: true
+		visible: true
 		opacity: 1
 		scale: 1
 
@@ -112,13 +112,15 @@ FAB_Expanded_with_Scrim.props =
 	originX: 1
 	originY: 1
 
-fab_collapsed.onClick ->
-	FAB_Expanded_with_Scrim.visible = true
-	FAB_Expanded_with_Scrim.states.switch("open", curve: "ease-in-out", time: .4)
+# At the end of a touch event on the collapsed FAB, switch the state o
+fab_collapsed.onTouchEnd ->
+	FAB_Expanded_with_Scrim.states.switch("open", curve: "ease-in-out", time: .2)
+	FAB_Expanded_with_Scrim.onStateWillSwitch ->
+		FAB_Expanded_with_Scrim.visible = true
 
-FAB_Expanded_with_Scrim.onClick ->
-	FAB_Expanded_with_Scrim.states.switch("closed", curve: "ease-in-out", time: .4)
-	FAB_Expanded_with_Scrim.visible = false
+FAB_Expanded_with_Scrim.onTouchEnd ->
+	FAB_Expanded_with_Scrim.states.switch("closed", curve: "ease-in-out", time: .2)
+
 
 #########################
 # ACCOUNT OVERFLOW MENU #
