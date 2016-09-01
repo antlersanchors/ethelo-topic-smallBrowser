@@ -203,32 +203,6 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"children": []
 					},
 					{
-						"objectId": "7920B2A2-D0EF-44E8-B4B1-903045326881",
-						"kind": "group",
-						"name": "breadcrumbBar",
-						"maskFrame": null,
-						"layerFrame": {
-							"x": 27746,
-							"y": 8233,
-							"width": 360,
-							"height": 35
-						},
-						"visible": true,
-						"metadata": {
-							"opacity": 1
-						},
-						"image": {
-							"path": "images/Layer-breadcrumbBar-nzkymeiy.png",
-							"frame": {
-								"x": 27746,
-								"y": 8233,
-								"width": 360,
-								"height": 35
-							}
-						},
-						"children": []
-					},
-					{
 						"objectId": "4766FF8F-B28D-45E7-B328-32CFA69AC77C",
 						"kind": "group",
 						"name": "bottomNavBar",
@@ -342,15 +316,41 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"maskFrame": null,
 				"layerFrame": {
 					"x": 27735,
-					"y": 8268,
+					"y": 8233,
 					"width": 382,
-					"height": 912
+					"height": 947
 				},
 				"visible": true,
 				"metadata": {
 					"opacity": 1
 				},
 				"children": [
+					{
+						"objectId": "7920B2A2-D0EF-44E8-B4B1-903045326881",
+						"kind": "group",
+						"name": "breadcrumbBar",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 27746,
+							"y": 8233,
+							"width": 360,
+							"height": 35
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-breadcrumbBar-nzkymeiy.png",
+							"frame": {
+								"x": 27746,
+								"y": 8233,
+								"width": 360,
+								"height": 35
+							}
+						},
+						"children": []
+					},
 					{
 						"objectId": "A277C248-BD61-4269-A307-F02836BF0AFB",
 						"kind": "group",

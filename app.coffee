@@ -17,21 +17,37 @@ Utils.globalLayers(sketch)
 bg = new BackgroundLayer
 	backgroundColor: Color.gray(0.91)
 
+# Janky realignment because it is mysteriously off
+nudge = [
+	bottomNavBar
+	progressBar
+	headerBar
+	SYSTEM_topBar
+	SYSTEM_bottomBar
+]
+
+for layer in nudge
+	layer.props =
+		x: -1
+
+bottomNavBar.x = -10
+
+# MAIN CONTENT SCROLLING
 contentScroll = new ScrollComponent
 	width: 1100
-	height: 1274
+	height: 1379
 	scrollHorizontal: false
 	mouseWheelEnabled: true
-	y: 357
+	y: 252
 	contentInset:
-		top: -357
+		top: -250
 
 contentScroll.content.draggable.overdragScale = 0.01 
 
 # Main content
 scrollableContent.superLayer = contentScroll.content
 
-# Scrolling for the side nav
+# SIDE NAV SCROLLING
 navScroll = new ScrollComponent
 	x: -1200
 	y: 24
@@ -74,7 +90,6 @@ SYSTEM_topBar.parent = null
 SYSTEM_bottomBar.parent = null
 headerBar.parent = null
 progressBar.parent = null
-breadcrumbBar.parent = null
 bottomNavBar.parent = null
 
 navScroll.bringToFront()
