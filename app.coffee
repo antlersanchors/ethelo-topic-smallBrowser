@@ -81,17 +81,18 @@ navScroll.bringToFront()
 
 FAB_Expanded_with_Scrim.states.add
 	closed:
-		visible: true
-		scale: 0
+		visible: false
 	open:
 		visible: true
-		scale: 1
 
 FAB_Expanded_with_Scrim.states.switch("open", curve: "ease-in-out", time: .2)
 FAB_Expanded_with_Scrim.states.switch("closed", curve:"ease-in-out", time: .2)
 
 fab_collapsed.onClick ->
 	FAB_Expanded_with_Scrim.states.next()
+
+FAB_Expanded_with_Scrim.onClick ->
+	FAB_Expanded_with_Scrim.states.switch("closed")
 
 # BUTTONNAV: I GO LAST
 # Here is an invisible hitbox for the Navigation Menu hamburger button
@@ -100,7 +101,7 @@ buttonNav = new Layer
 	x: 0
 	width: 182
 	height: 168
-# 	opacity: 0
+	opacity: 0
 
 # We'll toggle the hitbox’s position so that it can be used for the menu’s close button, as well
 buttonNav.states.add
@@ -116,3 +117,4 @@ buttonNav.onClick ->
 	sideNavDrawer.states.next()
 	buttonNav.states.next()
 	navScroll.states.next()
+
