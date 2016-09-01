@@ -76,7 +76,7 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 					"x": 0,
 					"y": 24,
 					"width": 361,
-					"height": 817
+					"height": 833
 				},
 				"visible": true,
 				"metadata": {
@@ -88,7 +88,7 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"x": 0,
 						"y": 24,
 						"width": 361,
-						"height": 817
+						"height": 833
 					}
 				},
 				"children": [
