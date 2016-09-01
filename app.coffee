@@ -9,8 +9,8 @@ Framer.Info =
 	description: ""
 
 
-# Import file "Ethelo Topic Page Prototypes-Small Browser v1 no artboard" (sizes and positions are scaled 1:3)
-sketch = Framer.Importer.load("imported/Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3x")
+# Import file "Ethelo Topic Page Prototypes-Small Browser v2 no artboard"
+sketch = Framer.Importer.load("imported/Ethelo Topic Page Prototypes-Small Browser v2 no artboard@3x")
 
 Utils.globalLayers(sketch)
 
@@ -142,7 +142,7 @@ accountsButton = new Layer
 	x: 898
 
 accountOrgDecisionsMenu.x = -1200
-accountOrgDecisionsMenu.bringToFront
+accountOrgDecisionsMenu.bringToFront()
 
 accountOrgDecisionsMenu.states.add
 	closed:
