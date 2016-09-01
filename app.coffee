@@ -91,6 +91,7 @@ SYSTEM_bottomBar.parent = null
 headerBar.parent = null
 progressBar.parent = null
 bottomNavBar.parent = null
+accountOrgDecisionsMenu.parent = null
 
 navScroll.bringToFront()
 
@@ -133,3 +134,25 @@ buttonNav.onClick ->
 	buttonNav.states.next()
 	navScroll.states.next()
 
+accountsButton = new Layer
+	y: 286
+	width: 182
+	height: 168
+# 	opacity: 0
+	x: 898
+
+accountOrgDecisionsMenu.x = -1200
+accountOrgDecisionsMenu.bringToFront
+
+accountOrgDecisionsMenu.states.add
+	closed:
+		x: -1200
+	open:
+		x: 0
+
+clickHandler = (event, layer) ->
+	if sideNavDrawer.states.current == "open"
+		accountOrgDecisionsMenu.states.next()
+	
+accountsButton.on(Events.Click, clickHandler)
+		
