@@ -17,7 +17,6 @@ Utils.globalLayers(sketch)
 bg = new BackgroundLayer
 	backgroundColor: Color.gray(0.91)
 
-fab_collapsed.index = 1000 
 contentScroll = new ScrollComponent
 	width: 1100
 	height: 1274
@@ -30,7 +29,7 @@ contentScroll = new ScrollComponent
 contentScroll.content.draggable.overdragScale = 0.01 
 
 # Main content
-scrollableContent.parent = contentScroll.content
+scrollableContent.superLayer = contentScroll.content
 
 # Scrolling for the side nav
 navScroll = new ScrollComponent
@@ -42,7 +41,6 @@ navScroll = new ScrollComponent
 	mouseWheelEnabled: true
 
 navScroll.content.draggable.overdrag = false
-navScroll.index = 99
 navScroll.states.add
 	open:
 		x:0
@@ -55,7 +53,7 @@ navScroll.states.animationOptions =
 
 # SIDE DRAWER NAVIGATION
 sideNavDrawer.x = -1200
-sideNavDrawer.parent = navScroll.content
+sideNavDrawer.superLayer = navScroll.content
 sideNavDrawer.index = 99
 sideNavDrawer.visible = true
 
@@ -76,7 +74,6 @@ buttonNav = new Layer
 	width: 182
 	height: 168
 # 	opacity: 0
-	index: 1000
 
 # We'll toggle the hitbox’s position so that it can be used for the menu’s close button, as well
 buttonNav.states.add
@@ -92,3 +89,12 @@ buttonNav.onClick ->
 	sideNavDrawer.states.next()
 	buttonNav.states.next()
 	navScroll.states.next()
+
+# BRING THINGS TO THE FRONT
+fab_collapsed.parent = null
+SYSTEM_topBar.parent = null
+SYSTEM_bottomBar.parent = null
+headerBar.parent = null
+progressBar.parent = null
+breadcrumbBar.parent = null
+bottomNavBar.parent = null
