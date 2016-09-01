@@ -14,6 +14,7 @@ sketch = Framer.Importer.load("imported/Ethelo Topic Page Prototypes-Small Brows
 
 Utils.globalLayers(sketch)
 
+Screen.frame.x = -
 bg = new BackgroundLayer
 	backgroundColor: Color.gray(0.91)
 
@@ -98,3 +99,5 @@ headerBar.parent = null
 progressBar.parent = null
 breadcrumbBar.parent = null
 bottomNavBar.parent = null
+
+navScroll.bringToFront
