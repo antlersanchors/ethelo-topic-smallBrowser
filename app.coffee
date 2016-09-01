@@ -44,7 +44,6 @@ contentScroll = new ScrollComponent
 		top: -250
 
 contentScroll.content.draggable.overdragScale = 0.01 
-
 scrollableContent.superLayer = contentScroll.content
 
 ######################
@@ -80,12 +79,10 @@ sideNavDrawer.visible = true
 sideNavDrawer.states.add
 	open:
 		x: 0
+		opacity: 1
 	closed:
 		x: -1200
-
-sideNavDrawer.states.animationOptions =
-	curve: "ease-in-out"
-	time: .5
+		opacity: .7
 
 # BRING ALL THE OTHER THINGS TO THE FRONT
 fab_collapsed.parent = null
@@ -99,53 +96,32 @@ accountOrgDecisionsMenu.parent = null
 
 navScroll.bringToFront()
 
+####################
+# FAB AND FAB MENU #
 FAB_Expanded_with_Scrim.states.add
 	closed:
-		visible: false
+		opacity: 0
+# 		visible: false
+		scale: 0
 	open:
-		visible: true
+# 		visible: true
+		opacity: 1
+		scale: 1
 
-FAB_Expanded_with_Scrim.states.switch("open", curve: "ease-in-out", time: .2)
-FAB_Expanded_with_Scrim.states.switch("closed", curve:"ease-in-out", time: .2)
+FAB_Expanded_with_Scrim.props =
+	originX: 1
+	originY: 1
 
 fab_collapsed.onClick ->
-	FAB_Expanded_with_Scrim.states.next()
+	FAB_Expanded_with_Scrim.visible = true
+	FAB_Expanded_with_Scrim.states.switch("open", curve: "ease-in-out", time: .4)
 
 FAB_Expanded_with_Scrim.onClick ->
-	FAB_Expanded_with_Scrim.states.switch("closed")
+	FAB_Expanded_with_Scrim.states.switch("closed", curve: "ease-in-out", time: .4)
+	FAB_Expanded_with_Scrim.visible = false
 
-# BUTTONNAV: I GO LAST
-# Here is an invisible hitbox for the Navigation Menu hamburger button
-# buttonNav = new Layer
-# 	y: 72
-# 	x: 0
-# 	width: 182
-# 	height: 168
-# 	opacity: 0
-# 
-# # We'll toggle the hitbox’s position so that it can be used for the menu’s close button, as well
-# buttonNav.states.add
-# 	closed:
-# 		x: 900
-# 	open:
-# 		x: 0
-# 
-# buttonNav.states.animationOptions =
-# 	time: 0
-# 
-# buttonNav.onClick ->
-# 	sideNavDrawer.states.next()
-# 	buttonNav.states.next()
-# 	navScroll.states.next()
-
-
-# accountsButton = new Layer
-# 	y: 286
-# 	width: 182
-# 	height: 168
-# # 	opacity: 0
-# 	x: 898
-
+#########################
+# ACCOUNT OVERFLOW MENU #
 accountOrgDecisionsMenu.x = -1200
 accountOrgDecisionsMenu.bringToFront()
 
@@ -153,10 +129,12 @@ accountOrgDecisionsMenu.states.add
 	closed:
 		x: -1200
 		opacity: .7
-
 	open:
 		x: 0
 		opacity: 1
+
+################
+# CLICK EVENTS #
 
 sideNavOpenButton.onClick ->
 		sideNavDrawer.states.switch("open", curve: "ease-in-out", time: .6)
@@ -171,11 +149,4 @@ accountOverflowButton.onClick ->
 
 closeAccountMenuButton.onClick ->
 	accountOrgDecisionsMenu.states.switch("closed", curve: "ease-in-out", time: .4)
-
-
-# clickHandler = (event, layer) ->
-# 	if sideNavDrawer.states.current == "open"
-# 		accountOrgDecisionsMenu.states.switch("")
-# 	
-# accountsButton.on(Events.Click, clickHandler)
 		
