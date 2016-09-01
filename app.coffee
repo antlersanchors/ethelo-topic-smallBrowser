@@ -50,8 +50,8 @@ scrollableContent.superLayer = contentScroll.content
 # SIDE NAV SCROLLING #
 navScroll = new ScrollComponent
 	x: -1200
-	y: 24
-	height: 1754
+	y: 72
+	height: 1734
 	width: 1200
 	scrollHorizontal: false
 	mouseWheelEnabled: true
@@ -71,9 +71,9 @@ navScroll.states.animationOptions =
 
 #################################
 # SIDE DRAWER NAVIGATION ACTUAL #
-sideNavDrawer.x = -1200
 sideNavDrawer.superLayer = navScroll.content
-sideNavDrawer.index = 99
+sideNavDrawer.x = -1200
+sideNavDrawer.y = 0
 sideNavDrawer.visible = true
 
 sideNavDrawer.states.add
@@ -88,13 +88,13 @@ sideNavDrawer.states.add
 fab_collapsed.parent = null
 FAB_Expanded_with_Scrim.parent = null
 SYSTEM_topBar.parent = null
-SYSTEM_bottomBar.parent = null
 headerBar.parent = null
 progressBar.parent = null
 bottomNavBar.parent = null
 accountOrgDecisionsMenu.parent = null
 
 navScroll.bringToFront()
+SYSTEM_bottomBar.parent = null
 
 ####################
 # FAB AND FAB MENU #
@@ -121,11 +121,10 @@ fab_collapsed.onTouchEnd ->
 FAB_Expanded_with_Scrim.onTouchEnd ->
 	FAB_Expanded_with_Scrim.states.switch("closed", curve: "ease-in-out", time: .2)
 
-
 #########################
 # ACCOUNT OVERFLOW MENU #
 accountOrgDecisionsMenu.x = -1200
-accountOrgDecisionsMenu.bringToFront()
+accountOrgDecisionsMenu.placeBefore(navScroll)
 
 accountOrgDecisionsMenu.states.add
 	closed:
@@ -135,9 +134,9 @@ accountOrgDecisionsMenu.states.add
 		x: 0
 		opacity: 1
 
+
 ################
 # CLICK EVENTS #
-
 sideNavOpenButton.onClick ->
 		sideNavDrawer.states.switch("open", curve: "ease-in-out", time: .6)
 		navScroll.states.switch("open", curve: "ease-in-out", time: .6)
