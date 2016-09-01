@@ -15,8 +15,9 @@ sketch = Framer.Importer.load("imported/Ethelo Topic Page Prototypes-Small Brows
 Utils.globalLayers(sketch)
 
 bg = new BackgroundLayer
-	backgroundColor: new Color(r: 255, g: 255, b: 255, a: .9)
+	backgroundColor: Color.gray(0.91)
 
+fab_collapsed.index = 1000 
 contentScroll = new ScrollComponent
 	width: 1100
 	height: 1274
@@ -66,7 +67,7 @@ sideNavDrawer.states.add
 
 sideNavDrawer.states.animationOptions =
 	curve: "ease-in-out"
-	time: .2
+	time: .4
 
 # Here is an invisible hitbox for the Navigation Menu hamburger button
 buttonNav = new Layer
@@ -76,35 +77,18 @@ buttonNav = new Layer
 	height: 168
 # 	opacity: 0
 	index: 1000
+
 # We'll toggle the hitbox’s position so that it can be used for the menu’s close button, as well
 buttonNav.states.add
-	open:
-		x: Screen.width - 182
 	closed:
+		x: 900
+	open:
 		x: 0
 
 buttonNav.states.animationOptions =
 	time: 0
 
-# TOGGLE THE SIDE DRAWER NAVIGATION
 buttonNav.onClick ->
 	sideNavDrawer.states.next()
 	buttonNav.states.next()
 	navScroll.states.next()
-
-
-superAwesomeLayer = new Layer
-	y: 72
-	width: 1080
-	height: 1704
-	opacity: 0
-
-fab_collapsed.parent = superAwesomeLayer
-
-
- 
-
- 
-
-
-

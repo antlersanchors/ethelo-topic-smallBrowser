@@ -1,20 +1,19 @@
 window.__imported__ = window.__imported__ || {};
 window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3x/layers.json.js"] = [
 	{
-		"objectId": "147F785C-7D29-4C20-8ECC-1ACAD79A21F0",
-		"kind": "group",
-		"name": "mainWrapper",
+		"objectId": "37FB0895-10ED-4E1D-912F-E2193E15BE28",
+		"kind": "artboard",
+		"name": "topicPage_smallBrowser",
 		"maskFrame": null,
 		"layerFrame": {
-			"x": 27735,
-			"y": 8150,
-			"width": 382,
-			"height": 1030
+			"x": 27746,
+			"y": 8149,
+			"width": 360,
+			"height": 1026
 		},
 		"visible": true,
-		"metadata": {
-			"opacity": 1
-		},
+		"metadata": {},
+		"backgroundColor": "rgba(0, 0, 0, 0.09)",
 		"children": [
 			{
 				"objectId": "D23CFEF0-B3E4-4957-B825-8F41B5F3D450",
@@ -22,8 +21,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"name": "SYSTEM_topBar",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 27746,
-					"y": 8150,
+					"x": 0,
+					"y": 0,
 					"width": 360,
 					"height": 24
 				},
@@ -34,8 +33,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"image": {
 					"path": "images/Layer-SYSTEM_topBar-rdizq0zf.png",
 					"frame": {
-						"x": 27746,
-						"y": 8150,
+						"x": 0,
+						"y": 0,
 						"width": 360,
 						"height": 24
 					}
@@ -48,8 +47,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"name": "SYSTEM_bottomBar",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 27746,
-					"y": 8741,
+					"x": 0,
+					"y": 592,
 					"width": 360,
 					"height": 48
 				},
@@ -60,8 +59,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"image": {
 					"path": "images/Layer-SYSTEM_bottomBar-oue0mjy0.png",
 					"frame": {
-						"x": 27746,
-						"y": 8741,
+						"x": 0,
+						"y": 592,
 						"width": 360,
 						"height": 48
 					}
@@ -74,21 +73,21 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"name": "sideNavDrawer",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 27746,
-					"y": 8173,
-					"width": 361,
+					"x": 0,
+					"y": 24,
+					"width": 360,
 					"height": 833
 				},
-				"visible": true,
+				"visible": false,
 				"metadata": {
 					"opacity": 1
 				},
 				"image": {
 					"path": "images/Layer-sideNavDrawer-neq3quqx.png",
 					"frame": {
-						"x": 27746,
-						"y": 8173,
-						"width": 361,
+						"x": 0,
+						"y": 24,
+						"width": 360,
 						"height": 833
 					}
 				},
@@ -99,8 +98,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"name": "organizationsMenu",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 27747,
-							"y": 8196,
+							"x": 1,
+							"y": 47,
 							"width": 215,
 							"height": 182
 						},
@@ -111,8 +110,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"image": {
 							"path": "images/Layer-organizationsMenu-mknbqknc.png",
 							"frame": {
-								"x": 27747,
-								"y": 8196,
+								"x": 1,
+								"y": 47,
 								"width": 215,
 								"height": 182
 							}
@@ -125,8 +124,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"name": "overflowMenu",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 27872,
-							"y": 8266,
+							"x": 126,
+							"y": 117,
 							"width": 215,
 							"height": 92
 						},
@@ -137,8 +136,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"image": {
 							"path": "images/Layer-overflowMenu-q0q0mje4.png",
 							"frame": {
-								"x": 27872,
-								"y": 8266,
+								"x": 126,
+								"y": 117,
 								"width": 215,
 								"height": 92
 							}
@@ -153,8 +152,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"name": "headerBar",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 27746,
-					"y": 8173,
+					"x": 0,
+					"y": 24,
 					"width": 360,
 					"height": 56
 				},
@@ -165,8 +164,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"image": {
 					"path": "images/Layer-headerBar-qti0oddb.png",
 					"frame": {
-						"x": 27746,
-						"y": 8173,
+						"x": 0,
+						"y": 24,
 						"width": 360,
 						"height": 56
 					}
@@ -179,8 +178,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"name": "progressBar",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 27745,
-					"y": 8229,
+					"x": -1,
+					"y": 80,
 					"width": 363,
 					"height": 4
 				},
@@ -191,8 +190,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"image": {
 					"path": "images/Layer-progressBar-njq3m0i3.png",
 					"frame": {
-						"x": 27745,
-						"y": 8229,
+						"x": -1,
+						"y": 80,
 						"width": 363,
 						"height": 4
 					}
@@ -205,8 +204,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"name": "FAB_Expanded_with_Scrim",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 27746,
-					"y": 8173,
+					"x": 0,
+					"y": 24,
 					"width": 360,
 					"height": 576
 				},
@@ -217,8 +216,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"image": {
 					"path": "images/Layer-FAB_Expanded_with_Scrim-mjvdquew.png",
 					"frame": {
-						"x": 27746,
-						"y": 8173,
+						"x": 0,
+						"y": 24,
 						"width": 360,
 						"height": 576
 					}
@@ -231,8 +230,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"name": "fab_collapsed",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 28027,
-					"y": 8615,
+					"x": 282,
+					"y": 468,
 					"width": 68,
 					"height": 68
 				},
@@ -243,8 +242,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"image": {
 					"path": "images/Layer-fab_collapsed-mdi1nem3.png",
 					"frame": {
-						"x": 28027,
-						"y": 8615,
+						"x": 282,
+						"y": 468,
 						"width": 68,
 						"height": 68
 					}
@@ -257,8 +256,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"name": "breadcrumbBar",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 27746,
-					"y": 8233,
+					"x": 0,
+					"y": 84,
 					"width": 360,
 					"height": 35
 				},
@@ -269,8 +268,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"image": {
 					"path": "images/Layer-breadcrumbBar-nzkymeiy.png",
 					"frame": {
-						"x": 27746,
-						"y": 8233,
+						"x": 0,
+						"y": 84,
 						"width": 360,
 						"height": 35
 					}
@@ -283,8 +282,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"name": "bottomNavBar",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 27742,
-					"y": 8687,
+					"x": -4,
+					"y": 538,
 					"width": 368,
 					"height": 64
 				},
@@ -295,8 +294,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"image": {
 					"path": "images/Layer-bottomNavBar-ndc2nkzg.png",
 					"frame": {
-						"x": 27742,
-						"y": 8687,
+						"x": -4,
+						"y": 538,
 						"width": 368,
 						"height": 64
 					}
@@ -309,8 +308,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				"name": "scrollableContent",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 27735,
-					"y": 8268,
+					"x": -11,
+					"y": 119,
 					"width": 382,
 					"height": 912
 				},
@@ -325,8 +324,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"name": "heroBlockHasImage",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 27746,
-							"y": 8268,
+							"x": 0,
+							"y": 119,
 							"width": 363,
 							"height": 103
 						},
@@ -337,8 +336,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"image": {
 							"path": "images/Layer-heroBlockHasImage-qti3n0my.jpg",
 							"frame": {
-								"x": 27746,
-								"y": 8268,
+								"x": 0,
+								"y": 119,
 								"width": 363,
 								"height": 103
 							}
@@ -351,8 +350,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"name": "introPanel",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 27735,
-							"y": 8363,
+							"x": -11,
+							"y": 214,
 							"width": 376,
 							"height": 253
 						},
@@ -363,8 +362,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"image": {
 							"path": "images/Layer-introPanel-oerbmdgz.png",
 							"frame": {
-								"x": 27735,
-								"y": 8363,
+								"x": -11,
+								"y": 214,
 								"width": 376,
 								"height": 253
 							}
@@ -382,8 +381,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 							"height": 287
 						},
 						"layerFrame": {
-							"x": 27735,
-							"y": 8618,
+							"x": -11,
+							"y": 469,
 							"width": 381,
 							"height": 295
 						},
@@ -394,8 +393,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"image": {
 							"path": "images/Layer-optionsPanel-nznfmdux.png",
 							"frame": {
-								"x": 27735,
-								"y": 8618,
+								"x": -11,
+								"y": 469,
 								"width": 381,
 								"height": 295
 							}
@@ -407,8 +406,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"name": "ic_bubble_chart_black_24px_copy_2",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 27763,
-									"y": 8632,
+									"x": 17,
+									"y": 483,
 									"width": 16,
 									"height": 16
 								},
@@ -423,8 +422,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"name": "Group",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 27763,
-											"y": 8632,
+											"x": 17,
+											"y": 483,
 											"width": 16,
 											"height": 16
 										},
@@ -435,8 +434,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"image": {
 											"path": "images/Layer-Group-rdgxnjqz.png",
 											"frame": {
-												"x": 27763,
-												"y": 8632,
+												"x": 17,
+												"y": 483,
 												"width": 16,
 												"height": 16
 											}
@@ -451,8 +450,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"name": "enterVoteButton",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 27759,
-									"y": 8764,
+									"x": 13,
+									"y": 615,
 									"width": 334,
 									"height": 40
 								},
@@ -463,8 +462,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"image": {
 									"path": "images/Layer-enterVoteButton-njm1ruzc.png",
 									"frame": {
-										"x": 27759,
-										"y": 8764,
+										"x": 13,
+										"y": 615,
 										"width": 334,
 										"height": 40
 									}
@@ -477,8 +476,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"name": "expansionTabRule",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 27746,
-									"y": 8856,
+									"x": 0,
+									"y": 707,
 									"width": 359,
 									"height": 2
 								},
@@ -489,8 +488,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"image": {
 									"path": "images/Layer-expansionTabRule-nunfqkix.png",
 									"frame": {
-										"x": 27746,
-										"y": 8856,
+										"x": 0,
+										"y": 707,
 										"width": 359,
 										"height": 2
 									}
@@ -503,8 +502,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"name": "discussions_expansionTab",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 27767,
-									"y": 8872,
+									"x": 21,
+									"y": 723,
 									"width": 128,
 									"height": 20
 								},
@@ -515,8 +514,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"image": {
 									"path": "images/Layer-discussions_expansionTab-rjzcquq0.png",
 									"frame": {
-										"x": 27767,
-										"y": 8872,
+										"x": 21,
+										"y": 723,
 										"width": 128,
 										"height": 20
 									}
@@ -528,8 +527,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"name": "ic_forum_black_24px_copy_6",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 27767,
-											"y": 8872,
+											"x": 21,
+											"y": 723,
 											"width": 20,
 											"height": 20
 										},
@@ -544,8 +543,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 												"name": "Group1",
 												"maskFrame": null,
 												"layerFrame": {
-													"x": 27767,
-													"y": 8872,
+													"x": 21,
+													"y": 723,
 													"width": 20,
 													"height": 20
 												},
@@ -556,8 +555,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 												"image": {
 													"path": "images/Layer-Group-nureotrd.png",
 													"frame": {
-														"x": 27767,
-														"y": 8872,
+														"x": 21,
+														"y": 723,
 														"width": 20,
 														"height": 20
 													}
@@ -574,8 +573,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"name": "resources_expansionTab",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 27766,
-									"y": 8824,
+									"x": 20,
+									"y": 675,
 									"width": 117,
 									"height": 20
 								},
@@ -586,8 +585,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"image": {
 									"path": "images/Layer-resources_expansionTab-njhgqkng.png",
 									"frame": {
-										"x": 27766,
-										"y": 8824,
+										"x": 20,
+										"y": 675,
 										"width": 117,
 										"height": 20
 									}
@@ -599,8 +598,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"name": "ic_description_black_24px_copy_2",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 27766,
-											"y": 8824,
+											"x": 20,
+											"y": 675,
 											"width": 16,
 											"height": 20
 										},
@@ -615,8 +614,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 												"name": "Group2",
 												"maskFrame": null,
 												"layerFrame": {
-													"x": 27766,
-													"y": 8824,
+													"x": 20,
+													"y": 675,
 													"width": 16,
 													"height": 20
 												},
@@ -627,8 +626,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 												"image": {
 													"path": "images/Layer-Group-meq3q0fb.png",
 													"frame": {
-														"x": 27766,
-														"y": 8824,
+														"x": 20,
+														"y": 675,
 														"width": 16,
 														"height": 20
 													}
@@ -645,8 +644,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"name": "Group_2",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 27751,
-									"y": 8663,
+									"x": 5,
+									"y": 514,
 									"width": 350,
 									"height": 167
 								},
@@ -664,8 +663,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"name": "suggestionsPanel",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 27736,
-							"y": 8915,
+							"x": -10,
+							"y": 766,
 							"width": 381,
 							"height": 265
 						},
@@ -676,8 +675,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 						"image": {
 							"path": "images/Layer-suggestionsPanel-ntbbqujf.png",
 							"frame": {
-								"x": 27736,
-								"y": 8915,
+								"x": -10,
+								"y": 766,
 								"width": 381,
 								"height": 265
 							}
@@ -689,8 +688,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"name": "suggestionVotingControls",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 28065,
-									"y": 8967,
+									"x": 319,
+									"y": 818,
 									"width": 24,
 									"height": 78
 								},
@@ -701,8 +700,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"image": {
 									"path": "images/Layer-suggestionVotingControls-qjgzqte0.png",
 									"frame": {
-										"x": 28065,
-										"y": 8967,
+										"x": 319,
+										"y": 818,
 										"width": 24,
 										"height": 78
 									}
@@ -714,8 +713,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"name": "Suggestion_Vote_Count_1",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 28065,
-											"y": 9011,
+											"x": 319,
+											"y": 862,
 											"width": 24,
 											"height": 18
 										},
@@ -726,8 +725,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"image": {
 											"path": "images/Layer-Suggestion_Vote_Count_1-mjhfmuqw.png",
 											"frame": {
-												"x": 28065,
-												"y": 9011,
+												"x": 319,
+												"y": 862,
 												"width": 24,
 												"height": 18
 											}
@@ -740,8 +739,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"name": "Suggestion_Vote_Count_6",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 28065,
-											"y": 8983,
+											"x": 319,
+											"y": 834,
 											"width": 24,
 											"height": 18
 										},
@@ -752,8 +751,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"image": {
 											"path": "images/Layer-Suggestion_Vote_Count_6-rtvboey5.png",
 											"frame": {
-												"x": 28065,
-												"y": 8983,
+												"x": 319,
+												"y": 834,
 												"width": 24,
 												"height": 18
 											}
@@ -768,8 +767,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"name": "ic_wb_incandescent_black_24px_copy_3",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 27760,
-									"y": 8926,
+									"x": 14,
+									"y": 777,
 									"width": 22,
 									"height": 22
 								},
@@ -784,8 +783,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"name": "Group3",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 27760,
-											"y": 8926,
+											"x": 14,
+											"y": 777,
 											"width": 22,
 											"height": 22
 										},
@@ -796,8 +795,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"image": {
 											"path": "images/Layer-Group-mujbndzf.png",
 											"frame": {
-												"x": 27760,
-												"y": 8926,
+												"x": 14,
+												"y": 777,
 												"width": 22,
 												"height": 22
 											}
@@ -812,8 +811,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 								"name": "ic_forum_black_24px_copy_2",
 								"maskFrame": null,
 								"layerFrame": {
-									"x": 27762,
-									"y": 9085,
+									"x": 16,
+									"y": 936,
 									"width": 16,
 									"height": 16
 								},
@@ -828,8 +827,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"name": "Group4",
 										"maskFrame": null,
 										"layerFrame": {
-											"x": 27762,
-											"y": 9085,
+											"x": 16,
+											"y": 936,
 											"width": 16,
 											"height": 16
 										},
@@ -840,8 +839,8 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 										"image": {
 											"path": "images/Layer-Group-mtg3nuyw.png",
 											"frame": {
-												"x": 27762,
-												"y": 9085,
+												"x": 16,
+												"y": 936,
 												"width": 16,
 												"height": 16
 											}
@@ -855,83 +854,5 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v1 no artboard@3
 				]
 			}
 		]
-	},
-	{
-		"objectId": "602442CD-A2E8-4066-9543-DBE8589F0C18",
-		"kind": "group",
-		"name": "filterTabs",
-		"maskFrame": null,
-		"layerFrame": {
-			"x": 28177,
-			"y": 8349,
-			"width": 323,
-			"height": 24
-		},
-		"visible": true,
-		"metadata": {
-			"opacity": 1
-		},
-		"image": {
-			"path": "images/Layer-filterTabs-njayndqy.png",
-			"frame": {
-				"x": 28177,
-				"y": 8349,
-				"width": 323,
-				"height": 24
-			}
-		},
-		"children": []
-	},
-	{
-		"objectId": "ECB0B44F-370A-4133-8C39-0EF8998B7FE0",
-		"kind": "group",
-		"name": "dropDownTopicMenu",
-		"maskFrame": null,
-		"layerFrame": {
-			"x": 28159,
-			"y": 8403,
-			"width": 368,
-			"height": 46
-		},
-		"visible": true,
-		"metadata": {
-			"opacity": 1
-		},
-		"image": {
-			"path": "images/Layer-dropDownTopicMenu-runcmei0.png",
-			"frame": {
-				"x": 28159,
-				"y": 8403,
-				"width": 368,
-				"height": 46
-			}
-		},
-		"children": []
-	},
-	{
-		"objectId": "BFFBDB89-2EC5-44DE-9DD7-14A4636A75BC",
-		"kind": "group",
-		"name": "dropDownTopicMenu_expanded",
-		"maskFrame": null,
-		"layerFrame": {
-			"x": 28159,
-			"y": 8486,
-			"width": 368,
-			"height": 222
-		},
-		"visible": true,
-		"metadata": {
-			"opacity": 1
-		},
-		"image": {
-			"path": "images/Layer-dropDownTopicMenu_expanded-qkzgqkrc.png",
-			"frame": {
-				"x": 28159,
-				"y": 8486,
-				"width": 368,
-				"height": 222
-			}
-		},
-		"children": []
 	}
 ]
