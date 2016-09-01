@@ -14,7 +14,6 @@ sketch = Framer.Importer.load("imported/Ethelo Topic Page Prototypes-Small Brows
 
 Utils.globalLayers(sketch)
 
-Screen.frame.x = -
 bg = new BackgroundLayer
 	backgroundColor: Color.gray(0.91)
 
@@ -68,6 +67,33 @@ sideNavDrawer.states.animationOptions =
 	curve: "ease-in-out"
 	time: .4
 
+# BRING THINGS TO THE FRONT
+fab_collapsed.parent = null
+FAB_Expanded_with_Scrim.parent = null
+SYSTEM_topBar.parent = null
+SYSTEM_bottomBar.parent = null
+headerBar.parent = null
+progressBar.parent = null
+breadcrumbBar.parent = null
+bottomNavBar.parent = null
+
+navScroll.bringToFront()
+
+FAB_Expanded_with_Scrim.states.add
+	closed:
+		visible: true
+		scale: 0
+	open:
+		visible: true
+		scale: 1
+
+FAB_Expanded_with_Scrim.states.switch("open", curve: "ease-in-out", time: .2)
+FAB_Expanded_with_Scrim.states.switch("closed", curve:"ease-in-out", time: .2)
+
+fab_collapsed.onClick ->
+	FAB_Expanded_with_Scrim.states.next()
+
+# BUTTONNAV: I GO LAST
 # Here is an invisible hitbox for the Navigation Menu hamburger button
 buttonNav = new Layer
 	y: 72
@@ -90,14 +116,3 @@ buttonNav.onClick ->
 	sideNavDrawer.states.next()
 	buttonNav.states.next()
 	navScroll.states.next()
-
-# BRING THINGS TO THE FRONT
-fab_collapsed.parent = null
-SYSTEM_topBar.parent = null
-SYSTEM_bottomBar.parent = null
-headerBar.parent = null
-progressBar.parent = null
-breadcrumbBar.parent = null
-bottomNavBar.parent = null
-
-navScroll.bringToFront

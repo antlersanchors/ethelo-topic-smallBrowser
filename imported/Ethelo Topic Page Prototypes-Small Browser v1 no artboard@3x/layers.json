@@ -3,16 +3,30 @@
 		"objectId": "D36AC1F9-ED47-4706-8CFB-861C2DDE06D7",
 		"kind": "group",
 		"name": "participantExperience",
-		"maskFrame": null,
+		"maskFrame": {
+			"x": 0,
+			"y": 0,
+			"width": 360,
+			"height": 1025
+		},
 		"layerFrame": {
-			"x": 27735,
+			"x": 27746,
 			"y": 8149,
-			"width": 382,
-			"height": 1031
+			"width": 360,
+			"height": 1025
 		},
 		"visible": true,
 		"metadata": {
 			"opacity": 1
+		},
+		"image": {
+			"path": "images/Layer-participantExperience-rdm2qumx.png",
+			"frame": {
+				"x": 27746,
+				"y": 8149,
+				"width": 360,
+				"height": 1025
+			}
 		},
 		"children": [
 			{
