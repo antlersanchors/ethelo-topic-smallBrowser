@@ -17,7 +17,7 @@ Utils.globalLayers(sketch)
 bg = new BackgroundLayer
 	backgroundColor: Color.gray(0.9)
 
-# Janky realignment because it layers are mysteriously off
+# Janky realignment because layers are mysteriously off
 nudge = [
 	bottomNavBar
 	progressBar
@@ -30,7 +30,9 @@ for layer in nudge
 	layer.props =
 		x: -1
 
-bottomNavBar.x = -10
+scrollableContent.x = -8
+
+bottomNavBar.x = -6
 
 ##########################
 # MAIN CONTENT SCROLLING #
@@ -133,7 +135,6 @@ accountOrgDecisionsMenu.states.add
 	open:
 		x: 0
 		opacity: 1
-
 
 ################
 # CLICK EVENTS #
