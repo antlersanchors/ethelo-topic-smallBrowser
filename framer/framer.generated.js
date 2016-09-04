@@ -5013,6 +5013,32 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v3@3x/layers.jso
 				]
 			},
 			{
+				"objectId": "A78E0E01-48D2-43AC-928F-E236B6194B84",
+				"kind": "group",
+				"name": "topChoicePanel",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": 27746,
+					"y": 8172,
+					"width": 360,
+					"height": 567
+				},
+				"visible": false,
+				"metadata": {
+					"opacity": 1
+				},
+				"image": {
+					"path": "images/Layer-topChoicePanel-qtc4rtbf.png",
+					"frame": {
+						"x": 27746,
+						"y": 8172,
+						"width": 360,
+						"height": 567
+					}
+				},
+				"children": []
+			},
+			{
 				"objectId": "0EDCDEDB-2785-488B-91E2-90337658DEB4",
 				"kind": "group",
 				"name": "noScroll",
@@ -5086,48 +5112,22 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v3@3x/layers.jso
 						"name": "backToDecisionBar",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 27742,
-							"y": 8679,
-							"width": 368,
-							"height": 64
+							"x": 27746,
+							"y": 8685,
+							"width": 360,
+							"height": 56
 						},
-						"visible": true,
+						"visible": false,
 						"metadata": {
 							"opacity": 1
 						},
 						"image": {
 							"path": "images/Layer-backToDecisionBar-nzfenzrf.png",
 							"frame": {
-								"x": 27742,
-								"y": 8679,
-								"width": 368,
-								"height": 64
-							}
-						},
-						"children": []
-					},
-					{
-						"objectId": "A78E0E01-48D2-43AC-928F-E236B6194B84",
-						"kind": "group",
-						"name": "topChoicePanel",
-						"maskFrame": null,
-						"layerFrame": {
-							"x": 27742,
-							"y": 8170,
-							"width": 368,
-							"height": 575
-						},
-						"visible": true,
-						"metadata": {
-							"opacity": 1
-						},
-						"image": {
-							"path": "images/Layer-topChoicePanel-qtc4rtbf.png",
-							"frame": {
-								"x": 27742,
-								"y": 8170,
-								"width": 368,
-								"height": 575
+								"x": 27746,
+								"y": 8685,
+								"width": 360,
+								"height": 56
 							}
 						},
 						"children": []
@@ -5267,22 +5267,22 @@ window.__imported__["Ethelo Topic Page Prototypes-Small Browser v3@3x/layers.jso
 						"name": "FAB_Expanded_with_Scrim",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": 27868,
-							"y": 8376,
-							"width": 232,
-							"height": 310
+							"x": 27746,
+							"y": 8172,
+							"width": 360,
+							"height": 567
 						},
-						"visible": true,
+						"visible": false,
 						"metadata": {
 							"opacity": 1
 						},
 						"image": {
 							"path": "images/Layer-FAB_Expanded_with_Scrim-mjvdquew.png",
 							"frame": {
-								"x": 27868,
-								"y": 8376,
-								"width": 232,
-								"height": 310
+								"x": 27746,
+								"y": 8172,
+								"width": 360,
+								"height": 567
 							}
 						},
 						"children": []

@@ -25,7 +25,6 @@ nudge = [
 	headerBar
 	SYSTEM_topBar
 	SYSTEM_bottomBar
-	backToDecisionBar
 ]
 
 for layer in nudge
@@ -35,7 +34,7 @@ for layer in nudge
 scrollableContent.x = -8
 
 bottomNavBar.x = -6
-backToDecisionBar.x = -9
+backToDecisionBar.x = -1
 topChoicePanel.x = -10
 
 ##########################
@@ -143,19 +142,77 @@ accountOrgDecisionsMenu.states.add
 		x: 0
 		opacity: 1
 
+##################################################
+# YOUR RESULTS PANEL and BACK TO DECISION BUTTON #
+topChoicePanel.x = 1200
+topChoicePanel.visible = true
+
+topChoiceScroll = new ScrollComponent
+	x: 1200
+	height: 1608
+	width: 1200
+	scrollHorizontal: false
+	mouseWheelEnabled: true
+
+topChoiceScroll.content.draggable.overdrag = false
+topChoicePanel.parent = topChoiceScroll.content
+
+topChoicePanel.states.add
+	hidden:
+		x: 1200
+		opacity: .7
+		visible: false
+	shown:
+		x: 0
+		opacity: 1
+		visible: true
+
+backToDecisionBar.states.add
+	hidden: 
+		opacity: .7
+		visible: false
+	shown:
+		opacity: 1
+		visible: true
+
+bottomNavBar.states.add
+	hidden: 
+		opacity: 0
+		visible: false
+	shown:
+		opacity: 1
+		visible: true
+
+bottomNavBar.placeBefore(topChoicePanel)
+
 ################
 # CLICK EVENTS #
 sideNavOpenButton.onClick ->
-		sideNavDrawer.states.switch("open", curve: "ease-in-out", time: .6)
-		navScroll.states.switch("open", curve: "ease-in-out", time: .6)
+	sideNavDrawer.states.switch("open", curve: "ease-in-out", time: .6)
+	navScroll.states.switch("open", curve: "ease-in-out", time: .6)
 
 closeSideNavButton.onClick ->
-		sideNavDrawer.states.switch("closed", curve: "ease-in-out", time: .4)
-		navScroll.states.switch("closed", curve: "ease-in-out", time: .4)
+	sideNavDrawer.states.switch("closed", curve: "ease-in-out", time: .4)
+	navScroll.states.switch("closed", curve: "ease-in-out", time: .4)
 
 accountOverflowButton.onClick ->
 	accountOrgDecisionsMenu.states.switch("open", curve: "ease-in-out", time: .4)
 
 closeAccountMenuButton.onClick ->
 	accountOrgDecisionsMenu.states.switch("closed", curve: "ease-in-out", time: .4)
-		
+
+resultsButton.onTouchEnd ->
+	bottomNavBar.states.switch("hidden", curve: "ease-in-out", time: .4)
+	backToDecisionBar.states.switch("shown", curve: "ease-in-out", time: .6)
+	backToDecisionBar.onStateWillSwitch ->
+		backToDecisionBar.visible = true
+	topChoicePanel.states.switch("shown", curve: "ease-in-out", time: .4)
+	topChoicePanel.onStateWillSwitch ->
+		topChoicePanel.visible = true
+
+backToDecisionBar.onClick ->
+	backToDecisionBar.states.switch("hidden", curve: "ease-in-out", time: .2)
+	topChoicePanel.states.switch("hidden", curve: "ease-in-out", time: .4)
+	bottomNavBar.states.switch("shown", curve: "ease-in-out", time: .2)
+	
+	
