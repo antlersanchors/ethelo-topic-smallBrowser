@@ -9,8 +9,9 @@ Framer.Info =
 	description: ""
 
 
-# Import file "Ethelo Topic Page Prototypes-Small Browser v2 no artboard" (sizes and positions are scaled 1:3)
-sketch = Framer.Importer.load("imported/Ethelo Topic Page Prototypes-Small Browser v2 no artboard@3x")
+# Import file "Ethelo Topic Page Prototypes-Small Browser v3" (sizes and positions are scaled 1:3)
+sketch = Framer.Importer.load("imported/Ethelo Topic Page Prototypes-Small Browser v3@3x")
+
 
 Utils.globalLayers(sketch)
 
@@ -24,6 +25,7 @@ nudge = [
 	headerBar
 	SYSTEM_topBar
 	SYSTEM_bottomBar
+	backToDecisionBar
 ]
 
 for layer in nudge
@@ -33,6 +35,8 @@ for layer in nudge
 scrollableContent.x = -8
 
 bottomNavBar.x = -6
+backToDecisionBar.x = -9
+topChoicePanel.x = -10
 
 ##########################
 # MAIN CONTENT SCROLLING #
@@ -87,6 +91,7 @@ sideNavDrawer.states.add
 		opacity: .7
 
 # BRING ALL THE OTHER THINGS TO THE FRONT
+# Note to self: there must be a better way of doing this…?
 fab_collapsed.parent = null
 FAB_Expanded_with_Scrim.parent = null
 SYSTEM_topBar.parent = null
@@ -94,6 +99,8 @@ headerBar.parent = null
 progressBar.parent = null
 bottomNavBar.parent = null
 accountOrgDecisionsMenu.parent = null
+topChoicePanel.parent = null
+backToDecisionBar.parent = null
 
 navScroll.bringToFront()
 SYSTEM_bottomBar.parent = null
