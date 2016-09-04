@@ -157,6 +157,16 @@ topChoiceScroll = new ScrollComponent
 topChoiceScroll.content.draggable.overdrag = false
 topChoicePanel.parent = topChoiceScroll.content
 
+topChoiceScroll.states.add
+	hidden:
+		x: 1200
+		opacity: .7
+		visible: false
+	shown:
+		x: 0
+		opacity: 1
+		visible: true
+
 topChoicePanel.states.add
 	hidden:
 		x: 1200
@@ -166,6 +176,7 @@ topChoicePanel.states.add
 		x: 0
 		opacity: 1
 		visible: true
+
 
 backToDecisionBar.states.add
 	hidden: 
@@ -184,6 +195,7 @@ bottomNavBar.states.add
 		visible: true
 
 bottomNavBar.placeBefore(topChoicePanel)
+SYSTEM_topBar.bringToFront()
 
 ################
 # CLICK EVENTS #
@@ -206,13 +218,16 @@ resultsButton.onTouchEnd ->
 	backToDecisionBar.states.switch("shown", curve: "ease-in-out", time: .6)
 	backToDecisionBar.onStateWillSwitch ->
 		backToDecisionBar.visible = true
+	topChoiceScroll.states.switch("shown", curve: "ease-in-out", time: .4)
+	topChoiceScroll.onStateWillSwitch ->
+		topChoicePanel.visible = true
 	topChoicePanel.states.switch("shown", curve: "ease-in-out", time: .4)
 	topChoicePanel.onStateWillSwitch ->
 		topChoicePanel.visible = true
 
 backToDecisionBar.onClick ->
 	backToDecisionBar.states.switch("hidden", curve: "ease-in-out", time: .2)
-	topChoicePanel.states.switch("hidden", curve: "ease-in-out", time: .4)
+	topChoiceScroll.states.switch("hidden", curve: "ease-in-out", time: .4)
 	bottomNavBar.states.switch("shown", curve: "ease-in-out", time: .2)
 	
 	
